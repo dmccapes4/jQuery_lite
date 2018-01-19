@@ -1,0 +1,16 @@
+
+
+<body>
+  <script type="text/javascript">
+    let div = document.findElementById("do-it");
+    let li = document.create("<p>You did it!</p>");
+    div.addEventListener("click", () => {
+      div.innerHTML += li;
+    });
+  </script>
+  <h2>You're done JSON.</h2>
+  <div class="json-buddy">
+    <input id="do-it" type="submit" name="" value="DO IT!">
+  </div>
+  <h3>I got your back AJAX</h3>
+</body>
