@@ -1,15 +1,24 @@
 
+<head>
 
+<script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function() {
+let btn = document.getElementById("do-it");
+let div = document.getElementById("json-buddy");
+console.log(div);
+console.log(btn);
+let li = document.createElement("p");
+console.log(li);
+li.innerHTML = "You did it!";
+div.addEventListener("click", () => {
+  div.appendChild(li);
+});
+})
+</script>
+</head>
 <body>
-  <script type="text/javascript">
-    let div = document.findElementById("do-it");
-    let li = document.create("<p>You did it!</p>");
-    div.addEventListener("click", () => {
-      div.innerHTML += li;
-    });
-  </script>
   <h2>You're done JSON.</h2>
-  <div class="json-buddy">
+  <div id="json-buddy">
     <input id="do-it" type="submit" name="" value="DO IT!">
   </div>
   <h3>I got your back AJAX</h3>
